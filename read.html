@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- REQUIREMENT: Metadata Section, 03-15-25-->
+<head>
+<meta charset="utf-8">
+<!--REQUIREMENT: Metadata viewport, 03-28-25-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- REQUIREMENT: Metadata title, 03-19-25-->
+<title>Cozy Kingdom - Read</title>
+<!--REQUIREMENT: Metadata description, 03-25-25-->
+<meta name="description" content="Explore Cozy Kingdom's book catalog and discover your next cozy read." >
+<!--REQUIREMENT: Metadata keywords, 03-28-25-->
+<meta name="keywords" content="books, reading, reviews, Cozy Kingdom">
+<!--REQUIREMENT: Metadata author, 03-28-25-->
+<meta name="author" content="Sandy Yousif">
+<link rel="stylesheet" type="text/css"  href="cozy.css">
+</head>
+<!--REQUIREMENT: body semantic element, 03-28-25-->
+<body class="read-page">
+<div id="wrapper">
+<!-- REQUIREMENT: Header Section, 03-15-25-->
+<header>
+<img src="images/cozylogo.png" alt="Cozy logo" id="logo">
+<h1>Cozy Kingdom</h1>
+</header>
+<!-- REQUIREMENT: Navigation Section, 03-15-25-->
+<nav>
+   <ul>
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="read.html">Read</a></li>
+	  <li><a href="review.html">Review</a></li>
+	  <li><a href="recommend.html">Recommend</a></li>
+   </ul>
+</nav>
+<!-- REQUIREMENT: main semantic section, 03-28-25-->
+<main>
+<h2>Enjoy Our Selections</h2>
+<div id="flow">
+<section class="book-section">
+<h3>Better Than the Movies</h3>
+<figure>
+<!--REQUIREMENT: image 1 , 03-28-25-->
+<!--REQUIREMENT: figure, 04-03-25-->
+<!--REQUIREMENT: float-image add, 04-04-25-->
+<img src="images/bookromance.jpg" alt="Cover of the book 'Better than the Movies' by Lynn Painter" class="book-image float-image">
+<figcaption>A fun romantic comedy journey of self-discovery and love.</figcaption>
+</figure>
+<p class="book-description">
+<strong>Author:</strong> Lynn Painter<br>
+<strong>Genre:</strong>Romance<br>
+<blockquote>
+<em>A romantic comedy that will make you believe in love at first sight.</em>
+<p>Follow the journey of a teenager caught between reality and her perfect movie romance.</p>
+</blockquote>
+</section>
+<!-- REQUIREMENT:image 2 , 03-28-25-->
+<section class="book-section">
+<h3>The Metamorphosis</h3>
+<!--REQUIREMENT: figure, 04-03-25-->
+<figure>
+<!--REQUIREMENT: float-image add, 04-04-25-->
+<img src="images/bookclassics.png  " alt="Cover of 'The Metamorphosis' by Franz Kafka" class="book-image float-image">
+<figcaption>A surreal story about transformation and isolation'</figcaption>
+</figure>
+<p class="book-description">
+<strong>Author:</strong> Franz Kafka<br>
+<strong>Genre:</strong> Classic<br>
+<blockquote>
+<em>A man who wakes up  transformed into a giant insect.</em>
+<p>a dark tale of human nature, alienation, and the fragility of identity.</p>
+</blockquote>
+</section>
+</div>
+</main>
+<!-- REQUIREMENT: Footer Section, 03-15-25-->
+<footer>
+<!--REQUIREMENT: button reset, 03-22-25-->
+<div class="footer-section volume-control">
+<div id="audio-container">
+<button class="footer-btn volume-btn" onclick="toggleMusic()">VOLUME</button>
+<audio id="bg-music" loop>
+<source src="Alone.mp3" type="audio/mpeg">
+<source src="Alone.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+</div>
+</div>
+<div class="footer-section copyright-Section">
+<p class="copyright">&copy; 2025 Cozy Kingdom. All rights reserved.</p>
+</div>
+<!--REQUIREMENT: email added, 03-25-25-->
+<div class="footer-section contact-info">
+<p>CONTACT US AT:</p>
+<a href="mailto:cozykingdom37@gmail.com">cozykingdom37@gmail.com</a>
+</div>
+</footer>
+</div>
+<script>
+function toggleMusic() { 
+       var music = document.getElementById("bg-music");
+	   if (music.paused) {
+	     music.play();
+	   } else { 
+	     music.pause();
+	   }
+}
+</script>
+</body>
+</html>

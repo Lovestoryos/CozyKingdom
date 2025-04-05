@@ -1,0 +1,566 @@
+* { box-sizing: border-box; }
+
+body { background-image: url(images/oldstyle.jpg);
+       background-size: cover;
+	   background-repeat: no-repeat;
+	   background-position: center;
+	   font-family: "Times New Roman", serif;
+	   font-style: italic;
+	   font-weight: bold;
+	   margin:0 ;
+	   padding:0 ;
+
+}  
+#wrapper {  margin: auto;
+            text-align: center;
+		   
+}		
+header { font-size: 100%;
+         background-color: #75533a;
+         display: flex;
+		 align-items: center;
+		 padding: 0.2em;
+		 width: 100%;
+         position: relative;		 
+}		 
+#logo { width: 150%;
+        max-width: 300px;
+        margin: 0 auto;
+		background: none;
+		position: absolute;
+		padding-left: 0.1em;
+		padding-top: 0.5%;
+}
+h1  {  font-size: 5em;
+	   color: #FFECDB;
+	   margin: 0 auto;
+	   text-align: center;
+	   position: static;
+	   padding:0.5em;
+}
+/* REQUIREMENT: Navigation Style, 03-15-25*/	 
+nav {  background-color: transparent;
+	   padding: 50px 0;
+	   text-align: center;
+}
+		
+nav ul { list-style-type: none;
+         margin: 0;
+         display: flex;
+		 justify-content: center;
+		 gap: 15px;
+		 flex-wrap: wrap;
+}
+nav ul li a { 
+              font-size: 1.4em;
+			  color: #FFECDB;
+			  text-decoration: none;
+			  background-color: #75533a;
+			  padding: 10px 10px;
+			  border-radius: 25px;
+			  display: block;
+}
+nav ul li a:hover { background-color: #553a22;
+}	
+main { flex: 1; }
+#welcome-section { text-align: center;
+                   margin:  60px auto;
+                   padding: 0;
+                   background-color: #75533a;
+				   max-width: 160px;
+                   border-radius: 55px;
+}
+.welcome-message { font-size: 1.4em;
+                   color: #FFECDB;
+				   padding: 5px;
+				   border-radius: 50px;
+				   display: block;
+				   
+}
+.paragraph-message {  font-size: 1.3em;
+                      color: #FFECDB;
+                      background-color: #75533a;
+                      padding: 0.5em;
+					  position: relative;
+                      border-radius: 200px;
+                      max-width: 500px;
+                      margin: 150px auto;
+					  text-align: center;
+                      display: flex;	
+                      justify-content: center;					 
+}
+/* REQUIREMENT: table style, -4-03-25 */
+table {  margin: 5px auto;
+         border-collapse: collapse;
+		 width: 30%;
+		 background-color: #75533a;
+		 color: #FFECDB;
+}
+table, th, td {  border: 1px solid #FFECDB;
+                 padding: 5px;
+				 text-align: center;
+}
+th {  background-color: #553a22;
+}
+caption { margin-bottom: 5px;
+          font-weight: bold;
+		  font-size: 1.2em;
+		  color: #FFECDB
+}
+/* REQUIREMENT: Footer Style, 03-15-25 */
+footer { background-color: #75533a;
+         color: #FFECDB;
+		 font-style: italic;
+         display: flex;
+		 text-align: center;
+		 justify-content: space-between;
+		 width: 100%;
+		 position: absolute;
+		 padding: 1em 2em;
+		 bottom: 0;
+         flex-wrap: wrap;	
+	 
+}
+.footer-section {  flex: 1;
+				   text-align: center;
+}
+.footer-section.volume-control {  text-align: left;
+                                  padding: 0;
+						 
+}
+.footer-section.contact-info { text-align: right;
+                               padding: 0.5em 1em;
+}
+.footer-btn {  font-size: 1em;
+			   color: #FFECDB;
+			   background-color: #75533a;
+			   text-align: center;
+			   border: none;
+			   padding: 0.5em  1em;
+			   border-radius: 20px;
+			   cursor: pointer;		  
+}
+.footer-btn:hover { background-color: #553a22;
+
+} 
+.contact-info a { color: #FFECDB;
+                  text-align: center;
+				  font-size: 1em;
+				  text-decoration: none; 
+
+				 
+}
+/* REQUIREMENT: Footer Style, 03-25-25 */
+.contact-info a:hover {  color: #553a22;                     
+                         
+}
+.copyright { color: #FFECDB;
+             text-align: center;
+			 font-size: 1em;
+			 margin: 0;
+			 padding: 1.5em;		 
+}
+.read-page #flow {   display: flex;
+			         justify-content: space-between;
+				     flex-wrap: wrap;
+				     text-align: center;
+				     gap: 2em;
+				     margin-top: auto;
+				     margin-bottom: 2em;			      
+}
+.read-page h2 { text-align: center;
+                font-size: 1.2em;
+				background-color: #75533a;
+				color: #FFECDB;
+				max-width: 350px;
+				margin: auto;
+				border-radius: 65px;
+				
+}
+.read-page .book-section {   flex: 1;
+                             color: #FFECDB;
+							 min-width: 250px;
+							 max-width: 45%;
+							 text-align: center;
+							 margin-bottom: 5em;
+							 padding: 0;
+}						      
+.read-page .book-section h3 {   font-size: 1.2em;
+                                background-color: #75533a;
+								color: #FFECDB;
+								padding: 0;
+								max-width: 220px;
+								border-radius: 400px;
+								margin: auto;
+								margin-top:0;
+								text-align: center;						 
+}
+.read-page .book-image {   width: 15%;
+                           max-width: 100%;
+			               margin-bottom: 0.4em;
+						   padding: 0;			      					 
+}
+/* REQUIREMENT: css float image, 04-04-25 */
+.read-page .float-image { float: center;
+                          width: 100px;
+						  margin: 2px;
+}
+.read-page .book-description {    font-size: 1em;
+                                  background-color: #75533a;
+								  color: #FFECDB;
+								  line-height: 1em;
+								  padding: 0;
+								  max-width: 200px;
+								  margin: auto;
+								  border-radius: 80px;
+							   
+}
+.review-page #flow { display: flex;
+			         justify-content: space-between;
+				     flex-wrap: wrap;
+				     text-align: center;
+				     gap: 1em;
+				     margin-top: 0;
+				     margin-bottom: 2em;
+}
+.review-page h2 {  text-align: center;
+                   font-size: 2em;
+				   background-color: #75533a;
+				   color: #FFECDB;
+				   max-width: 350px;
+				   margin: 0 auto;
+				   border-radius: 30px;
+				   padding: 0;
+}
+.review-page .book-section { flex: 1;
+                             color: #FFECDB;
+							 min-width: 200px;
+							 max-width: 45%;
+							 text-align: center;
+							 margin: auto;
+							 padding: 1em;
+}
+.review-page .book-section h3 { font-size: 1.3em;
+                                background-color: #75533a;
+								color: #FFECDB;
+								padding: 0;
+								max-width: 220px;
+								border-radius: 400px;
+								margin: 0 auto;
+								margin-bottom:1em;
+								text-align: center;
+}
+.review-page .book-image { width: 15%;
+                           max-width: 100%;
+			               margin-bottom: 0.4em;
+						   padding: 0;
+}
+.review-page .book-description {  font-size: 1em;
+                                  background-color: #75533a;
+								  color: #FFECDB;
+								  line-height: 1em;
+								  padding: 0;
+								  max-width: 200px;
+								  margin: auto;
+								  border-radius: 80px;
+}
+/* REQUIREMENT: form add , 04-04-25 */
+.review-page .form  {  background-color: #75533a;
+                       color: #FFECDB;
+					   width: 35%;
+					   margin: auto;
+					   margin-bottom: 1em;
+					   padding: 2px 2px;
+					   border-radius: 5px;
+					   box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+.review-page .form label { display: inline-block;
+                           width: 120px;
+                           margin-bottom: 0.5em;
+}
+.review-page .form input {  margin-bottom: 0.5em;
+                            padding: 0 0.5em;
+							width: calc(80% - 200px);
+}
+.review-page .form style { margin-bottom: 1em;
+                           padding: 1em;
+						   width: calc(80% - 200px);
+}
+.review-page .form input[type="submit"] { padding: 5px 5px;
+                                          margin-right: 5px;
+										  border-radius: 5px;
+										  border: none;
+										  cursor: pointer;
+}
+.review-page .form input[type="reset"] {  padding: 5px 5px;
+                                          margin-right: 5px;
+										  border-radius: 5px;
+										  border: none;
+										  cursor: pointer;
+}
+.review-page .form input[type="submit"]:hover { background-color: #75533a;
+}
+.review-page .form input[type="reset"]:hover { background-color: #75533a;
+}
+/*REQUIREMENT: read-page footer edit, 04-04-25 */
+.review-page footer {  text-align: center;
+		               justify-content: space-between;
+		               width: 100%;
+		               position: relative;
+		               padding: 0;
+		               bottom: 0;
+                       flex-wrap: nowrap;	
+}
+.recommend-page #flow {  display: flex;
+			             justify-content: space-between;
+				         flex-wrap: wrap;
+				         text-align: center;
+				         gap: 1em;
+				         margin-top: 0;
+				         margin-bottom: 2em;
+}
+.recommend-page .book-section { flex: 1;
+                                color: #FFECDB;
+							    min-width: 200px;
+							    max-width: 55%;
+							    text-align: center;
+							    margin: auto;
+							    padding: 0.5em;
+}
+.recommend-page h2 {  text-align: center;
+                      font-size: 2em;
+				      background-color: #75533a;
+				      color: #FFECDB;
+				      max-width: 350px;
+				      margin: 0 auto;
+				      border-radius: 30px;
+				      padding: 0;
+}
+.recommend-page .book-section h3 {  font-size: 1.2em;
+                                    background-color: #75533a;
+								    color: #FFECDB;
+								    padding: 0.5em;
+								    max-width: 250px;
+								    border-radius: 500px;
+								    margin: 0 auto;
+								    margin-bottom:1em;
+								    text-align: center;
+}
+.recommend-page .reading-tips {   background-color: #75533a;
+                                  width: 100%;
+								  max-width: 600px;
+                                  padding: 0;
+								  margin-bottom: 1em ;
+								  line-height: 4em;
+								  display: inline-block;
+								  align-items: center;
+								  text-align: center;
+                                  border-radius: 100px;
+}								
+.recommend-page .book-image { width: 15%;
+                              max-width: 100%;
+			                  margin-bottom: 0.4em;
+						      padding: 0;
+}
+.recommend-page .book-description {  font-size: 1.2em;
+                                     background-color: #75533a;
+								     color: #FFECDB;
+								     line-height: 1em;
+								     padding: 1em;
+								     max-width: 250px;
+								     margin: auto;
+								     border-radius: 100px;
+}
+/* REQUIREMENT: media query 1, 03-25-25 */
+@media (min-width: 600px) {
+	body { font-size: 1em;
+	}
+	header { padding: 0;
+	}
+	h1  { font-size: 2em;
+	}
+	#logo {  width: 150px;
+			 top: -30px;
+			 left: -50px;	 
+	}
+	nav ul {   gap: 30px;
+	}
+	.paragraph-message { 
+	                     margin-top: 1em;
+	                     padding: 1em;
+						 font-size: 1.4em;
+	}
+	footer { flex-direction: row;
+			 padding:0;
+			 bottom: 0 ;
+	}
+	.footer-section { margin-bottom: 0;
+	}
+	.footer-btn {  padding: 0.5em 1em;
+	}
+	.footer-section.volume-control {  padding: 0.5em 1em;
+
+	}
+	.read-page #flow {    margin-top: 0.2em;
+			              padding: 0;
+	}
+	.read-page h2 { font-size: 2em;
+	}
+	.read-page .book-section {   max-width: 48%;
+	}
+	.read-page .book-image {  max-width: 120px;		  
+	}
+	.read-page .book-description {  padding: 0;
+								   
+	}
+	.review-page #flow { margin-top: 0.2em;
+			             padding: 0;
+	}
+	.review-page h2 { font-size: 2em;
+	}
+	.review-page .book-section {  width: 100%;
+                                  margin-bottom: 0;
+								  padding: 1em;
+	}
+	.review-page .book-image { max-width: 120px;
+	}
+	.review-page .book-description { padding: 0;
+								   
+	}
+	.recommend-page #flow {  margin-top: 0.2em;
+	                         padding: 0;
+	}
+	.recommend-page h2 { font-size: 2em;
+	}
+	.recommend-page .book-section {  width: 100%;
+                                     margin-bottom: 0;
+								     padding: 1em;
+	}
+	.recommend-page .book-image { max-width: 120px;
+	}
+	.recommend-page .book-description {   padding: 0;
+    }
+}
+/* REQUIREMENT: media query 2, 04-03-25*/
+@media (max-width: 599px) { 
+	h1 { font-size: 2em;
+		 padding: 0;
+	}
+	#logo { width: 100px;
+
+	}
+	nav ul { gap: 10px;
+	}
+	.paragraph-message { font-size: 1em;
+	                     margin-top: 4em;
+						 padding: 1em;
+	}
+	footer {  padding: 0;
+	          position: absolute;
+	      	  flex-direction: column;
+    }
+}
+@media (min-width: 1024px) { 
+   body { font-size: 1em;
+	}
+	
+	header { padding: 0;
+	}
+	
+	h1 { font-size: 2.5em;
+	}
+	nav ul { text-align: center;
+	}
+	#logo { width: 250px;
+	        position: absolute;
+			top: -60px;
+			left: -60px;
+	}
+	#welcome-section {  text-align: center;
+                        margin:  40px auto;
+                        padding: 0;
+                        background-color: #75533a;
+				        max-width: 160px;
+                        border-radius: 55px;
+	}
+	.paragraph-message {  font-size: 1.4em;
+						  margin: 150px auto;
+						  padding: 1.5em; 
+	}
+	.footer-section { margin-bottom: 0;
+	                  flex: 1;
+					  text-align: center;
+	}
+	.footer-btn { font-size: 1em;
+	              padding: 0.5em 1.5em;
+	}
+	.copyright { font-size: 1em;
+	}
+	.contact-info { font-size: 1em;
+	}
+	.read-page #flow {   padding: 0;
+						 margin: 0;
+	}
+	.read-page h2 { margin-bottom: 2em;
+	}
+	.read-page .book-section h3 {   width: 100%;
+                                    margin-bottom: 1em;
+	}
+	.read-page .book-image {  max-width: 100px;	
+	
+	}
+	.read-page .book-description {  padding: 1em;
+								    text-align: center;
+	}
+	.review-page #flow {   padding: 0;
+	                       margin: 0;
+	}
+	.review-page .book-section {   width: 100%;
+                                   margin-bottom: 1em;
+								   padding: 0;
+	}
+	.review-page .book-image {  max-width: 100px;		  
+	}
+	.review-page .book-description { font-size: 1em;
+	                                 padding: 0.5em;
+									 margin-bottom: 1em;
+								   
+	}
+	.recommend-page #flow {   display: flex;
+			                  justify-content: space-between;
+				              flex-wrap: wrap;
+				              text-align: center;
+				              gap: 2em;
+				              margin-bottom: 4em;
+	}
+	.recommend-page .book-section {   width: 100%;
+	                                  margin-top: 2em;
+								      padding: 0;
+	}
+	.recommend-page .book-image {  max-width: 100px;		  
+	}
+	.recommend-page .book-description {  font-size: 1em;
+	                                     padding: 0.5em;
+								         text-align: center;
+								         margin-bottom: 2em;                       
+	}
+	#wrapper { margin:0 auto;
+    }
+}  
+
+
+				  
+				  
+
+		 
+		 
+         		 
+
+		 
+
+		 
+		 
+
+		  
+		   
+		   

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- REQUIREMENT: Metadata Section, 03-15-25-->
+<head>
+<meta charset="utf-8">
+<!--REQUIREMENT: Metadata viewport, 03-28-25-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- REQUIREMENT: Metadata title, 03-19-25-->
+<title>Cozy Kingdom - Recommend</title>
+<!--REQUIREMENT: Metadata description, 03-25-25-->
+<meta name="description" content="Explore Cozy Kingdom's book catalog and discover your next cozy read." >
+<!--REQUIREMENT: Metadata keywords, 03-28-25-->
+<meta name="keywords" content="books, reading, reviews, Cozy Kingdom">
+<!--REQUIREMENT: Metadata author, 03-28-25-->
+<meta name="author" content="Sandy Yousif">
+<link rel="stylesheet" type="text/css"  href="cozy.css">
+</head>
+<!--REQUIREMENT: body semantic element, 03-28-25-->
+<body class="recommend-page"> 
+<div id="wrapper">
+<!-- REQUIREMENT: Header Section, 03-15-25-->
+<header>
+<img src="images/cozylogo.png" alt="Cozy logo" id="logo">
+<h1>Cozy Kingdom</h1>
+</header>
+<!-- REQUIREMENT: Navigation Section, 03-15-25-->
+<nav>
+   <ul>
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="read.html">Read</a></li>
+	  <li><a href="review.html">Review</a></li>
+	  <li><a href="recommend.html">Recommend</a></li>
+   </ul>
+</nav>
+<!-- REQUIREMENT: main semantic element, 03-28-25-->
+<main>
+<h2>Our Recommendations</h2>
+<div id="flow">
+<section class="book-section">
+<h3>Milk and Honey</h3>
+<figure>
+<!--REQUIREMENT: image 5 , 04-01-25-->
+<img src="images/milkbook.jpg" alt="Cover of 'Milk and Honey' by Rupi Kaur" class="book-image">
+<!--REQUIREMENT: figure, 04-03-25-->
+<figcaption>A collection of poetry and prose exploring femininity and healing.</figcaption>
+</figure>
+<p class="book-description">
+<strong>Author:</strong> Rupi Kaur<br>
+<strong>Genre:</strong>Poetry<br>
+<!--REQUIREMENT: blockquote, 04-03-25-->
+<blockquote>
+<p>Milk and Honey is a bestselling collection of poetry that speaks to emotional survival. It Explores themes of love, abuse, loss, and femininity. It's raw and powerful.</p>
+</blockquote>
+<em>A poetic journey of survival and healing.</em>
+</section>
+<!--REQUIREMENT: non-nav list, 04-04-25-->
+<section class="book-section reading-tips">
+<h3>Additional Reading tips</h3>
+<ul>
+<li>Read a variety of genres to expand your perspective.</li>
+<li>Join a local book club for engaging discussions.</li>
+<li>Take notes on what resonates with you in each book.</li>
+</ul>
+</section>
+<!-- REQUIREMENT:image 6 , 04-01-25-->
+<section class="book-section">
+<h3>The Picture of Dorian Gray</h3>
+<figure>
+<img src="images/dorianbook.jpg" alt="Cover of 'The Picture of Dorian Gray' by Oscar Wilde" class="book-image">
+<figcaption>A gothic novel about vanity, temptation, and morality.</figcaption>
+</figure>
+<p class="book-description">
+<strong>Author:</strong> Oscar Wilde<br>
+<strong>Genre:</strong> Classic<br>
+<blockquote>
+<p>A haunting story about the cost of indulgence and the loss of innocence. As Dorian Gray's life moves on, he remains young and beautiful as his portrait withers.</p>
+</blockquote>
+<em>A haunting exploration of vanity and morality.</em>
+</section>
+<!--REQUIREMENT: non-nav list, 04-04-25-->
+</div>
+</main>
+<!-- REQUIREMENT: Footer Section, 03-15-25-->
+<footer>
+<!--REQUIREMENT: button reset, 03-22-25-->
+<div class="footer-section volume-control">
+<div id="audio-container">
+<button class="footer-btn volume-btn" onclick="toggleMusic()">VOLUME</button>
+<audio id="bg-music" loop>
+<source src="Alone.mp3" type="audio/mpeg">
+<source src="Alone.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+</div>
+</div>
+<!--REQUIREMENT: special character, 03-15-25-->
+<div class="footer-section copyright-Section">
+<p class="copyright">&copy; 2025 Cozy Kingdom. All rights reserved.</p>
+</div>
+<!--REQUIREMENT: email added, 03-25-25-->
+<div class="footer-section contact-info">
+<p>CONTACT US AT:</p>
+<a href="mailto:cozykingdom37@gmail.com">cozykingdom37@gmail.com</a>
+</div>
+</footer>
+</div>
+<script>
+function toggleMusic() { 
+       var music = document.getElementById("bg-music");
+	   if (music.paused) {
+	     music.play();
+	   } else { 
+	     music.pause();
+	   }
+}
+</script>
+</body>
+</html>

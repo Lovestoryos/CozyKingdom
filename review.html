@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- REQUIREMENT: Metadata Section, 03-15-25-->
+<head>
+<meta charset="utf-8">
+<!--REQUIREMENT: Metadata viewport, 03-31-25-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- REQUIREMENT: Metadata title, 03-19-25-->
+<title>Cozy Kingdom - Review </title>
+<!--REQUIREMENT: Metadata description, 03-25-25-->
+<meta name="description" content="Share your thoughts on books you've read. - Cozy Kingdom is a place for honest reviews and reader voices." >
+<!--REQUIREMENT: Metadata keywords, 03-31-25-->
+<meta name="keywords" content="books, reading, reviews, Cozy Kingdom">
+<!--REQUIREMENT: Metadata author, 03-31-25-->
+<meta name="author" content="Sandy Yousif">
+<link rel="stylesheet" type="text/css"  href="cozy.css">
+</head>
+<!--REQUIREMENT: body semantic element, 03-31-25-->
+<body class="review-page">
+<div id="wrapper">
+<!-- REQUIREMENT: Header Section, 03-15-25-->
+<header>
+<img src="images/cozylogo.png" alt="Cozy logo" id="logo">
+<h1>Cozy Kingdom</h1>
+</header>
+<!-- REQUIREMENT: Navigation Section, 03-15-25-->
+<nav>
+   <ul>
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="read.html">Read</a></li>
+	  <li><a href="review.html">Review</a></li>
+	  <li><a href="recommend.html">Recommend</a></li>
+   </ul>
+</nav>
+<!-- REQUIREMENT: Main Content Section, 03-31-25-->
+<main>
+<h2>Check Out Our Reviews</h2>
+<div id="flow">
+<section class="book-section">
+<h3>The Goblin Emperor</h3>
+<!-- REQUIREMENT:image 3 , 04-01-25-->
+<img src="images/goblinbook.jpg" alt="Cover of 'The Goblin Emperor' by Katherine Addison" class="book-image">
+<!--REQUIREMENT: add table, 04-03-25-->
+<table>
+<caption>Book Details</caption>
+<tr>
+<th>Author</th>
+<td>Katherine Addison</td>
+</tr>
+<tr>
+<th>Genre</th>
+<td>Fantasy</td>
+</tr>
+<tr>
+<th>Rating</th>
+<td>4.5/5</td>
+</tr>
+</table>
+<!--REQUIREMENT: edit description, 04-04-25-->
+<p class="book-description"></p>
+<blockquote>
+"The Goblin Emperor is a beautifully written fantasy novel that blends political intrigue with rich world-building. The protagonist, Maia, finds himself thrust into the dangerous world of court politics after the sudden death of his father."
+</blockquote>
+<em>the journey from isolation to leadership is both eloquent and immersive.</em>
+</section>
+<section class="book-section">
+<h3>Fairy Tale</h3>
+<!-- REQUIREMENT:image 4 , 04-01-25-->
+<img src="images/talebook.jpg" alt="Cover of 'Fairy Tale' by stephen king" class="book-image">
+<!--REQUIREMENT: table add, 04-03-25-->
+<table>
+<caption>Book Details</caption>
+<tr>
+<th>Author</th>
+<td>stephen King</td>
+</tr>
+<tr>
+<th>Genre</th>
+<td>Fantasy</td>
+</tr>
+<tr>
+<th>Rating</th>
+<td>5/5</td>
+</tr>
+</table>
+<p class="book-description"></p>
+<blockquote>
+"stephen King's Fairy Tale takes readers into a dark and magical world where a teenager, Charlie reade, stumbles upon a parallel universe. it's gripping, full of suspense, and hard to put down."
+<em>This book is unforgettable read for fantasy fans.</em>
+</blockquote>
+</section>
+</div>
+<!--REQUIREMENT: form add, 04-04-25-->
+<form class="form" action="#" method="post">
+<fieldset>
+<legend>Feedback Form</legend>
+<label for="fname">Name:</label>
+<input type="text" id="fname" name="fname" required>
+<br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<br>
+<p>How would you rate our reviews?</p>
+<input type="radio" id="excellent" name="rating" value="excellent" required>
+<label for="excellent">Excellent</label>
+<input type="radio" id="good" name="rating" value="good">
+<label for="good">Good</label>
+<input type="radio" id="poor" name="rating" value="poor">
+<label for="poor">Poor</label>
+<br>
+<label for="frequency">How often do you read reviews?</label>
+<select id="frequency" name="frequency" required>
+<option value="">Select One</option>
+<option value="daily">Daily</option>
+<option value="weekly">Weekly</option>
+<option value="monthly">Monthly</option>
+</select>
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</fieldset>
+</form>
+</main>
+<!-- REQUIREMENT: Footer Section, 03-15-25-->
+<footer>
+<!--REQUIREMENT: button reset, 03-22-25-->
+<div class="footer-section volume-control">
+<div id="audio-container">
+<button class="footer-btn volume-btn" onclick="toggleMusic()">VOLUME</button>
+<audio id="bg-music" loop>
+<source src="Alone.mp3" type="audio/mpeg">
+<source src="Alone.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+</div>
+</div>
+<div class="footer-section copyright-Section">
+<p class="copyright">&copy; 2025 Cozy Kingdom. All rights reserved.</p>
+</div>
+<!--REQUIREMENT: email added, 03-25-25-->
+<div class="footer-section contact-info">
+<p>CONTACT US AT:</p>
+<a href="mailto:cozykingdom37@gmail.com">cozykingdom37@gmail.com</a>
+</div>
+</footer>
+</div>
+<script>
+function toggleMusic() { 
+       var music = document.getElementById("bg-music");
+	   if (music.paused) {
+	     music.play();
+	   } else { 
+	     music.pause();
+	   }
+}
+</script>
+</body>
+</html> 
